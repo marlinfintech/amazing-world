@@ -1,0 +1,96 @@
+html, body {height: 100%;width: 100%;margin: 0;font-size: 1rem;font-family: serif;word-spacing: normal;line-height: 1.5;scroll-behavior: smooth;}
+
+body {background: #FFFFFF;overflow-x: hidden;display: grid;}
+
+.grid-container {word-wrap: break-word;background: #FFFFFF;display: grid;gap: 0.125rem;width: 100%;}
+
+.top-section {display: grid;background: #20B2AA;text-align: center;position: relative;width: 100%;padding: 0;}
+.top-section h3 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;}
+
+.intro {text-align: center;color: #000000;font-family: serif;word-spacing: 0.5rem;line-height: 1.5;padding: 0;width: 100%;}
+.intro p {margin: 0 3rem;font-size: 1rem;}
+
+.first-grid-header{text-align: center;color: #00BFFF;padding: 0;margin: 0.125rem auto;margin-top: 1rem}
+
+.nature-card-category {display: grid;grid-template-columns: repeat(2, 1fr);grid-template-rows: auto;gap: 0.125rem;background: #000000;width: 100%;}
+
+.small-cards-column {display: grid;grid-template-columns: repeat(2, 1fr);gap: 0.125rem;grid-column: 1 / -1;max-height: 400px;
+overflow-y: scroll;scrollbar-width: thin;scrollbar-color: #CCCCCC #FFFFFF;}
+
+.nature-card-item.featured img {width: 100%;height: 375px;object-fit: cover;}
+
+.small-cards-column .nature-card-item-image img {width: 100%;height: 170px;object-fit: cover;}
+@media (min-width: 1000px) {.small-cards-column {grid-column: 1;}}
+
+.small-cards-column::-webkit-scrollbar {width: 5px;}
+
+.small-cards-column::-webkit-scrollbar-thumb {background: #CCCCCC;}
+
+.small-cards-column::-webkit-scrollbar-track {background: #FFFFFF;}
+
+.nature-card-item {width: 100%;display: flex;flex-direction: column;cursor: pointer;}
+.nature-card-item-image img {width: 100%;display: block;}
+.nature-card-item-description {line-height:normal;min-height: 4rem;font-weight: normal;background: #20B2AA;}
+.nature-card-item-description p {text-align: center;color: #FFFFFF;font-size: 1rem;margin: 0;padding: 0;}
+
+.nature-card-item.featured {grid-column: 1 / -1;grid-row: 1;}
+
+.nature-card-item:not(.featured) {width: 100%;}
+
+.nature-card-category {transition: opacity 2s ease;}
+
+.nature-card-item {transition: opacity 2s ease;}
+
+.fade {opacity: 0;}
+
+.view-button-nature-card-category {display: grid;align-items: center;background: #FFFFFF;grid-column: span 1;}
+.view-button-nature {text-align: center;border-radius: 0.25rem;background: linear-gradient(to bottom, #60E2DC, #20B2AA);color: #000;padding: 0.5rem 1rem;
+text-decoration: none;margin: 1rem auto;border: none;outline: none;font-size: 1rem;}
+
+@media (min-width: 1000px) {.nature-card-category {grid-template-columns: 2fr 3fr;overflow: hidden;}
+.small-cards-column {display: grid;grid-template-columns: 1fr 1fr;gap: 0.125rem;overflow-y: scroll;height: calc(467px + 4rem);max-height: calc(467px + 4rem);
+scrollbar-width: thin;scrollbar-color: #CCCCCC #FFFFFF;}
+.small-cards-column::-webkit-scrollbar {width: 5px;}
+.small-cards-column::-webkit-scrollbar-thumb {background: #CCCCCC;}
+.small-cards-column::-webkit-scrollbar-track {background: #FFFFFF;}
+.small-cards-column .nature-card-item {display: flex;flex-direction: column;}
+.small-cards-column .nature-card-item-image {flex: 1;overflow: hidden;}
+.small-cards-column .nature-card-item-image img {width: 100%;height: 200px;object-fit: cover;}
+.small-cards-column .nature-card-item-description {line-height:normal;min-height: 4rem;max-height: 4rem;overflow: hidden;}
+.small-cards-column .nature-card-item-description p {text-align: center;color: #FFFFFF;font-size: 1rem;margin: 0;padding: 0;}
+ .nature-card-item.featured {grid-column: 2;grid-row: 1;}
+.nature-card-item.featured img {width: 100%;height: 467px;object-fit: cover;}
+.nature-card-item.featured .nature-card-item-description {min-height: 4rem;max-height: 4rem;overflow: hidden;}
+.nature-card-category {transition: opacity 2s ease;}
+.nature-card-item {transition: opacity 2s ease;}
+.fade {opacity: 0;}}
+
+.fixed-nature-card-category {display: grid;grid-template-columns: repeat(1, 1fr);grid-template-rows: auto;gap: 0.125rem;background: #FFFFFF;width: 100%;}
+@media (min-width: 1000px) {.fixed-nature-card-category {grid-template-columns: repeat(2, 1fr);}}
+.fixed-nature-card-category-header {grid-column: span 1;margin: 0 auto;padding: 0;text-align: center;}
+.fixed-nature-card-category-header h4 {color: #00BFFF;margin: 0 auto;margin-top: 1rem;padding: 0;}
+@media (min-width: 1000px) {.fixed-nature-card-category-header {grid-column: span 2;margin: 0 auto;padding: 0;}}
+.fixed-nature-card-category-header h4 {color: #00BFFF;margin: 0 auto;margin-top: 1rem;padding: 0;}
+.fixed-nature-card-item {width: 100%;display: grid;grid-template-columns: 1fr;cursor: pointer;}
+.fixed-nature-card-item-image img {width: 100%;display: block;height: 300px;}
+@media (min-width: 1000px) {.fixed-nature-card-item-image img {height: 375px;}}
+.fixed-nature-card-item-description {height: 100%;font-weight: normal;background: #20B2AA ;}
+.fixed-nature-card-item-description p {text-align: center;color: #FFFFFF;font-size: 1rem;margin: 0.5rem auto;}
+
+.view-button-section-landscapes {display: grid;grid-column: span 1;align-items: center;background: #FFFFFF;}
+@media (min-width: 1000px) {.view-button-section-landscapes {grid-column: span 2;}}
+.view-button-landscapes {text-align: center;border-radius: 0.25rem;background: linear-gradient(to bottom, #60E2DC, #20B2AA);color: #000000;
+padding: 0.5rem 1rem;text-decoration: none;margin: 1rem auto;border: none;outline: none;font-size: 1rem;font-weight: normal;}
+.view-button-landscapes:hover {background: #60E2DC;}
+
+.view-button-section-domestic {display: grid;grid-column: span 1;align-items: center;background: #FFFFFF;}
+@media (min-width: 1000px) {.view-button-section-domestic {grid-column: span 2;}}
+.view-button-domestic {text-align: center;border-radius: 0.25rem;background: linear-gradient(to bottom, #60E2DC, #20B2AA);color: #000000;
+padding: 0.5rem 1rem;text-decoration: none;margin: 1rem auto;border: none;outline: none;font-size: 1rem;font-weight: normal;}
+.view-button-domestic:hover {background: #60E2DC;}
+.hidden {display: none;}
+
+footer {background: #20B2AA;text-align: center;}
+.end-section p {color: #FFFFFF;background-clip: text;font-size: small;font-weight: bold;margin-bottom:0;padding-bottom:0}
+footer a{color:#FFFFFF}
+.end-section{background: #20B2AA;}
