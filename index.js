@@ -2,7 +2,7 @@ console.log("INDEX JS LOADED");
 
 const smallCardsColumn = document.querySelector(".small-cards-column");
 const featuredSlot = document.querySelector(".nature-card-item.featured");
-let currentIndex = 0;
+let currentIndex = -1;
 let pinnedCard = null;
 
 function getCards() {
