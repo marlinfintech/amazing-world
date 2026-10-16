@@ -1,11 +1,36 @@
-html, body {height: 100%;width: 100%;margin: 0;font-size: 1rem;font-family: serif;word-spacing: normal;line-height: 1.5;scroll-behavior: smooth;}
+@font-face {
+    font-family: "mft-fonts-ranchers";
+    src: url("fonts/Ranchers-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "mft-fonts-patuaone";
+    src: url("fonts/PatuaOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "mft-fonts-anta";
+    src: url("fonts/Anta-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "mft-fonts-hammersmithone";
+    src: url("fonts/HammersmithOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {height: 100%;width: 100%;margin: 0;font-size: 1rem;font-family: serif;word-spacing: normal;line-height: 1.5;scroll-behavior: smooth;font-family:mft-fonts-patuaone}
 
 body {background: #FFFFFF;overflow-x: hidden;display: grid;}
 
 .grid-container {word-wrap: break-word;background: #FFFFFF;display: grid;gap: 0.125rem;width: 100%;}
 
 .top-section {display: grid;background: #20B2AA;text-align: center;position: relative;width: 100%;padding: 0;}
-.top-section h3 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;}
+.top-section h3 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;font-family:mft-fonts-anta}
 
 .intro {text-align: center;color: #000000;font-family: serif;word-spacing: 0.5rem;line-height: 1.5;padding: 0;width: 100%;}
 .intro p {margin: 0 3rem;font-size: 1rem;}
@@ -90,7 +115,10 @@ padding: 0.5rem 1rem;text-decoration: none;margin: 1rem auto;border: none;outlin
 .view-button-domestic:hover {background: #60E2DC;}
 .hidden {display: none;}
 
-footer {background: #20B2AA;text-align: center;}
-.end-section p {color: #FFFFFF;background-clip: text;font-size: small;font-weight: bold;margin-bottom:0;padding-bottom:0}
-footer a{color:#FFFFFF}
-.end-section{background: #20B2AA;}
+h4{font-family:sans-serif;font-weight:bold;padding-bottom:0;margin-bottom:0}
+
+footer {background: #FFFFFF;text-align: center;margin-bottom:0;padding-bottom:0 }
+.end-section p,a {background: linear-gradient(to bottom,#F4F4F4 10%, #0078A2);background-clip: text;color: transparent;font-size:small;font-family:mft-fonts-ranchers;margin-bottom:0;padding-bottom:0;}
+.end-section p{word-spacing:0.25rem}
+footer a{word-spacing:normal}
+.end-section{background: #FFFFFF;}
