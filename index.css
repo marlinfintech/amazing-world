@@ -30,7 +30,7 @@ body {background: #FFFFFF;overflow-x: hidden;display: grid;}
 .grid-container {word-wrap: break-word;background: #FFFFFF;display: grid;gap: 0.125rem;width: 100%;}
 
 .top-section {display: grid;background: #20B2AA;text-align: center;position: relative;width: 100%;padding: 0;}
-.top-section h3 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;font-family:mft-fonts-anta}
+.top-section h3 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;font-family:mft-fonts-patuaone;letter-spacing:0.046875rem}
 
 .intro {text-align: center;color: #000000;font-family: serif;word-spacing: 0.5rem;line-height: 1.5;padding: 0;width: 100%;}
 .intro p {margin: 0 3rem;font-size: 1rem;}
