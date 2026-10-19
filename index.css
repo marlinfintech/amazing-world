@@ -115,7 +115,7 @@ padding: 0.5rem 1rem;text-decoration: none;margin: 1rem auto;border: none;outlin
 .view-button-domestic:hover {background: #60E2DC;}
 .hidden {display: none;}
 
-h4{font-family:sans-serif;font-weight:bold;padding-bottom:0;margin-bottom:0}
+h4{font-family:sans-serif;font-weight:bold;padding-bottom:0;margin-bottom:0;font-kerning:none}
 
 footer {background: #FFFFFF;text-align: center;margin-bottom:0;padding-bottom:0 }
 .end-section p,a {background: linear-gradient(to bottom,#F4F4F4 10%, #0078A2);background-clip: text;color: transparent;font-size:small;font-family:mft-fonts-ranchers;margin-bottom:0;padding-bottom:0;}
