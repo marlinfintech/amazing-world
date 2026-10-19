@@ -123,7 +123,7 @@ h4{letter-spacing:0.046875rem}
 
 @media (min-width: 1000px) {body{letter-spacing:0.03rem}}
 
-@media (min-width: 1000px) {h1{letter-spacing:1rem}}
+@media (min-width: 1000px) {h1{letter-spacing:1rem;font-weight:normal}}
 
 @media (min-width: 1000px) {h4{letter-spacing:0.105rem}}
 
