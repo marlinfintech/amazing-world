@@ -30,12 +30,12 @@ body {background: #FFFFFF;overflow-x: hidden;display: grid;}
 .grid-container {word-wrap: break-word;background: #FFFFFF;display: grid;gap: 0.125rem;width: 100%;}
 
 .top-section {display: grid;background: #20B2AA;text-align: center;position: relative;width: 100%;padding: 0;}
-.top-section h3 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;font-family:mft-fonts-patuaone;letter-spacing:0.046875rem}
+.top-section h1 {margin: 0 auto;padding: 0;font-weight: bold;color: #FFFFFF;background-clip: text;font-family:mft-fonts-patuaone;letter-spacing:0.046875rem}
 
 .intro {text-align: center;color: #000000;font-family: serif;word-spacing: 0.5rem;line-height: 1.5;padding: 0;width: 100%;}
 .intro p {margin: 0 3rem;font-size: 1rem;}
 
-.first-grid-header{text-align: center;color: #00BFFF;padding: 0;margin: 0.125rem auto;margin-top: 1rem}
+.first-grid-header{text-align: center;color: #00BFFF;padding: 0;margin: 0.125rem auto;margin-top: 1rem;font-family:mft-fonts-patuaone}
 
 .nature-card-category {display: grid;grid-template-columns: repeat(2, 1fr);grid-template-rows: auto;gap: 0.125rem;background: #000000;width: 100%;}
 
@@ -93,9 +93,9 @@ scrollbar-width: thin;scrollbar-color: #CCCCCC #FFFFFF;}
 .fixed-nature-card-category {display: grid;grid-template-columns: repeat(1, 1fr);grid-template-rows: auto;gap: 0.125rem;background: #FFFFFF;width: 100%;}
 @media (min-width: 1000px) {.fixed-nature-card-category {grid-template-columns: repeat(2, 1fr);}}
 .fixed-nature-card-category-header {grid-column: span 1;margin: 0 auto;padding: 0;text-align: center;}
-.fixed-nature-card-category-header h4 {color: #00BFFF;margin: 0 auto;margin-top: 1rem;padding: 0;}
+.fixed-nature-card-category-header h4 {color: #00BFFF;margin: 0 auto;margin-top: 1rem;padding: 0;font-family:mft-fonts-patuaone}
 @media (min-width: 1000px) {.fixed-nature-card-category-header {grid-column: span 2;margin: 0 auto;padding: 0;}}
-.fixed-nature-card-category-header h4 {color: #00BFFF;margin: 0 auto;margin-top: 1rem;padding: 0;}
+.fixed-nature-card-category-header h4 {color: #00BFFF;margin: 0 auto;margin-top: 1rem;padding: 0;font-family:mft-fonts-patuaone}
 .fixed-nature-card-item {width: 100%;display: grid;grid-template-columns: 1fr;cursor: pointer;}
 .fixed-nature-card-item-image img {width: 100%;display: block;height: 300px;}
 @media (min-width: 1000px) {.fixed-nature-card-item-image img {height: 375px;}}
@@ -115,7 +115,11 @@ padding: 0.5rem 1rem;text-decoration: none;margin: 1rem auto;border: none;outlin
 .view-button-domestic:hover {background: #60E2DC;}
 .hidden {display: none;}
 
-h4{font-family:sans-serif;font-weight:bold;padding-bottom:0;margin-bottom:0;font-kerning:none}
+.fixed-nature-card-category-header h4{font-family:mft-fonts-patuaone;font-weight:bold;padding-bottom:0;margin-bottom:0;}
+
+h4{letter-spacing:0.046875rem}
+
+@media (min-width: 1000px) {.nature-card-item p .fixed-nature-card-item p {font-weight:normal}}
 
 footer {background: #FFFFFF;text-align: center;margin-bottom:0;padding-bottom:0 }
 .end-section p,a {background: linear-gradient(to bottom,#F4F4F4 10%, #0078A2);background-clip: text;color: transparent;font-size:small;font-family:mft-fonts-ranchers;margin-bottom:0;padding-bottom:0;}
