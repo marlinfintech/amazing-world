@@ -2,28 +2,16 @@
     font-family: "mft-fonts-ranchers";
     src: url("fonts/Ranchers-Regular.ttf") format("truetype");
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;font-display: block;
 }
 @font-face {
     font-family: "mft-fonts-patuaone";
     src: url("fonts/PatuaOne-Regular.ttf") format("truetype");
     font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "mft-fonts-anta";
-    src: url("fonts/Anta-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "mft-fonts-hammersmithone";
-    src: url("fonts/HammersmithOne-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+    font-style: normal;font-display: block;
 }
 
-html, body {height: 100%;width: 100%;margin: 0;font-size: 1rem;font-family: serif;word-spacing: normal;line-height: 1.5;scroll-behavior: smooth;font-family:mft-fonts-patuaone}
+html, body {height: 100%;width: 100%;margin: 0;font-size: 1rem;font-family: sans-serif;word-spacing: normal;line-height: 1.5;scroll-behavior: smooth;font-family:mft-fonts-patuaone}
 
 body {background: #FFFFFF;overflow-x: hidden;display: grid;}
 
@@ -115,7 +103,7 @@ padding: 0.5rem 1rem;text-decoration: none;margin: 1rem auto;border: none;outlin
 .view-button-domestic:hover {background: #60E2DC;}
 .hidden {display: none;}
 
-.fixed-nature-card-category-header h4{font-family:mft-fonts-patuaone;letter-spacing:normal;font-weight: normal;;padding-bottom:0;margin-bottom:0;}
+.fixed-nature-card-category-header h4{font-family:mft-fonts-patuaone;letter-spacing:normal;font-weight: normal;padding-bottom:0;margin-bottom:0;}
 
 h4{letter-spacing:normal;font-weight: normal;}
 
